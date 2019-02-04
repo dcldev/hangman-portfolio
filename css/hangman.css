@@ -1,8 +1,48 @@
 body {
     color: orangered;
     background-color: darkolivegreen;
+    font-family: helvetica !important;
+    font-weight: bold !important;
 }
 
-/* .background {
-    background-color:
-} */
+.background {
+    background-image: url("../images/beach-vb-hangman-jumbo.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#new-game-button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    background-color: orangered;
+    position: relative;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 6px darkslategrey;
+}
+
+#new-game-button:hover {
+    box-shadow: 0 4px darkslategrey;
+    top: 2px;
+}
+
+#new-game-button:active {
+    box-shadow: none;
+    top: 6px;
+}
+
+#placeholder-section {
+    background-color: olivedrab;
+}
+
+#placeholders {
+    letter-spacing: 6px;
+    font-size: 40px;
+}
