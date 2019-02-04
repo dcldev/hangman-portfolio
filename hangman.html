@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Beach Volleyball Hangman Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="hangman.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+</head>
+
+<body>
+    <div class="jumbotron-fluid background py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-8 my-3">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <div class="herobeachimage">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 my-3">
+                    <h1>Beach Volleyball Terminology</h1>
+                    <button id="new-game-button">
+                        <i class="fas fa-volleyball-ball"></i>
+                        Click to Start a New Game
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center py-5" id="placeholder-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 my-3">
+                            <h2>Fill These In:
+                                <br/>
+                                <span id="placeholders"></span>
+                            </h2>
+                        </div>
+                        <div class="col-12 col-md-6 my-3">
+                            <h2>Guessed Letters:
+                                <br/>
+                                <span id="guessedetters"></span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4 text-center py-5">
+                <h3>
+                    Guesses Left: <span id="guesses-left">0</span>
+                </h3>
+            </div>
+            <div class="col-12 col-md-4 text-center py-5">
+                <h3>
+                    Wins: <span id="wins">0</span>
+                </h3>
+            </div>
+            <div class="col-12 col-md-4 text-center py-5">
+                <h3>
+                    Losses: <span id="losses">0</span>
+                </h3>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+</body>
+
+</html>
