@@ -1,5 +1,4 @@
 // Pseudocode of what I need
-
 // Grab reference to my DOM elements - named with $ signs to know that it is a dom element (one of the easier ways to refer and find dom elements)
 
 var $newGameButton = document.getElementById('new-game-button');
@@ -7,7 +6,7 @@ var $placeholders = document.getElementById('placeHolders');
 var $guessedLetters = document.getElementById('guessed-letters');
 var $guessesLeft = document.getElementById('guesses-left');
 var $wins = document.getElementById('wins');
-var $losses = document.getAnimations('losses');
+var $losses = document.getElementById('losses');
  
 // Create variables for hangman game (wordBank, wins, losses, picked word, guesses left, game running, picked word placeholder, guessed letter bank, incorrect lettor bank)
 
@@ -91,14 +90,14 @@ function checkIncorrect(letter) {
     // Write new bank of incorrect letters guessed to DOM
     $guessedLetters.textContent = incorrectLetterBank.join(' ');
     // Write new amount of guesses left to DOM
-    $guessedLeft.textContent = guessesLeft;
+    $guessesLeft.textContent = guessesLeft;
     }
     checkLoss();
 }
 
 // checkLose
 function checkLoss() {
-    if (guessesLeft === 0) {
+    if (guessesLeft = 0) {
         losses++;
         gameRunning = false;
         $losses.textContent = losses;

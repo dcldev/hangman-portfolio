@@ -40,9 +40,10 @@ body {
 
 #placeholder-section {
     background-color: olivedrab;
+    color:white;
 }
 
-#placeholders {
+#placeHolders {
     letter-spacing: 6px;
     font-size: 40px;
 }
